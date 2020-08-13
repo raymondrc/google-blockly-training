@@ -1,0 +1,188 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="l1~o7s{4Y#EFsih+1)=5">user_side</variable>
+    <variable id=";-!;JAS*P@MDJKdOMjf$">user_length</variable>
+    <variable id="B0buE@4$SAg*J%i}_e^r">angle</variable>
+    <variable id="`68!I|~~WKV.jVsF|Mph">side</variable>
+    <variable id="NRDzqKWDj)}Vi8Z%3QjH">length</variable>
+  </variables>
+  <block type="procedures_defnoreturn" id="Jzu*pA2:kB9/a`eEJ:`_" x="42" y="101">
+    <mutation>
+      <arg name="user_side" varid="l1~o7s{4Y#EFsih+1)=5"></arg>
+      <arg name="user_length" varid=";-!;JAS*P@MDJKdOMjf$"></arg>
+    </mutation>
+    <field name="NAME">draw_hexagon</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="/M{r2`27%C?}9DB7H.~$">
+        <value name="TIMES">
+          <shadow type="math_number" id="Z1NDGm)~ssTPx=5?}Vf,">
+            <field name="NUM">10</field>
+          </shadow>
+          <block type="variables_get" id="xzA#?2P`m2SE}t2j!t}y">
+            <field name="VAR" id="l1~o7s{4Y#EFsih+1)=5">user_side</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="turtle_forward" id="HbjUU=76{m7Ll|/S}Wx(">
+            <value name="NAME">
+              <block type="variables_get" id="Pu%GW76{j2qQ|bperpr!">
+                <field name="VAR" id=";-!;JAS*P@MDJKdOMjf$">user_length</field>
+              </block>
+            </value>
+            <next>
+              <block type="turtle_right" id="czkk#*?Uj/d$BBFOM#Cb">
+                <value name="NAME">
+                  <block type="variables_get" id="uJTz|a*6+D@h8Z4H_!,a">
+                    <field name="VAR" id="B0buE@4$SAg*J%i}_e^r">angle</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="turtle_import" id="7BE;(oCw$TgWJrv,V[n1" x="61" y="264">
+    <next>
+      <block type="turtle_setup" id="Simz+wk1*GbE:?HFJvcg">
+        <value name="width">
+          <block type="math_number" id="fChv9*)4%Vb?0?KC%=l;">
+            <field name="NUM">800</field>
+          </block>
+        </value>
+        <value name="height">
+          <block type="math_number" id="#o$5aV+@/U/Yp5$8hvuW">
+            <field name="NUM">800</field>
+          </block>
+        </value>
+        <next>
+          <block type="turtle_shape" id="I0x?)Odh,cnmL,xW0i.P">
+            <field name="shape selection">'turtle'</field>
+            <next>
+              <block type="turtle_color" id="0Yde0A;a3QWnKu)(y(:6">
+                <value name="color">
+                  <block type="text" id="Y158rV7X.T!gKSKa1oFQ">
+                    <field name="TEXT">red</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="S3qLO?ywRw5JZka.Ynq!">
+                    <field name="VAR" id="`68!I|~~WKV.jVsF|Mph">side</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="vRGj1d8R:AJhEI3y.}E1">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="6AMi`J5hB/K$TJ;~V:Oo">
+                        <field name="VAR" id="NRDzqKWDj)}Vi8Z%3QjH">length</field>
+                        <value name="VALUE">
+                          <block type="math_number" id="-/7X0-4D}RJS]|$O:_1P">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="L;37U^;,3FAcl-A[TPS6">
+                            <field name="VAR" id="B0buE@4$SAg*J%i}_e^r">angle</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="DI8;k.Y;:YrDq6/Ns5O-">
+                                <field name="OP">DIVIDE</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="q{lv=b9,Xl`.v:*KgQ(O">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_number" id="mv:_D0u+8e/3]ABx`FP3">
+                                    <field name="NUM">360</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="meUVeb1Q3w-cf27+pIts">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="f,@4]ocK);kIvOFe*x8-">
+                                    <field name="VAR" id="`68!I|~~WKV.jVsF|Mph">side</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_repeat_ext" id="oTJ`jVajj9L3B7~FG,Le">
+                                <value name="TIMES">
+                                  <shadow type="math_number" id="{kNN!N,.:5ovH=^3x=F7">
+                                    <field name="NUM">10</field>
+                                  </shadow>
+                                  <block type="math_number" id=".zZ35y.Q0%RR%+0dS:ab">
+                                    <field name="NUM">60</field>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="variables_set" id="ZP2tQM#tB.(?t5}si80U">
+                                    <field name="VAR" id="NRDzqKWDj)}Vi8Z%3QjH">length</field>
+                                    <value name="VALUE">
+                                      <block type="math_arithmetic" id="?YXkbkEvnY,_~_Ph~pv^">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="=HG`4iu|p9B$=Pnm4/:O">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="nSh|CdMv7;P3~FS6FMxA">
+                                            <field name="VAR" id="NRDzqKWDj)}Vi8Z%3QjH">length</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="6HH=TCYHl`Tf-NC|GIVJ">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_number" id="Em1Io}VPdvB}TSl0F8D#">
+                                            <field name="NUM">5</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="~Z|wOWxNV{d$6hN#Lb4o">
+                                        <mutation name="draw_hexagon">
+                                          <arg name="user_side"></arg>
+                                          <arg name="user_length"></arg>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block type="variables_get" id="JM6_#NNc40v8n_fBA5wU">
+                                            <field name="VAR" id="`68!I|~~WKV.jVsF|Mph">side</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="variables_get" id="t73@u[~VFs3Pog{fx8:t">
+                                            <field name="VAR" id="NRDzqKWDj)}Vi8Z%3QjH">length</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="turtle_right" id="59R!BUm+]}I5h])=g0Rz">
+                                            <value name="NAME">
+                                              <block type="math_number" id="f:CTuSiz-n2%_OsI;jTx">
+                                                <field name="NUM">5</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,85 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="ogb9of2/wUg_4Oo2VLM)">i</variable>
+  </variables>
+  <block type="turtle_init" id="9gL0GZ)xcm==smL%BmQO" x="34" y="15">
+    <next>
+      <block type="turtle_setup" id="=dLeNZ_iWYa?WMCqnsWH">
+        <value name="width">
+          <block type="math_number" id="Rk^Nq}Wyxk81ocGTWS7#">
+            <field name="NUM">800</field>
+          </block>
+        </value>
+        <value name="height">
+          <block type="math_number" id="BS~?fu?_x=iFgSKHZQq!">
+            <field name="NUM">500</field>
+          </block>
+        </value>
+        <next>
+          <block type="turtle_speed" id="#(LfAW_S8GI^KqKvO]eT">
+            <value name="NAME">
+              <block type="math_number" id="lT5[+f7d*a*9Pnd?]oXb">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <next>
+              <block type="turtle_color" id="%*Sg,,QT]-}rQ@Fyx{r}">
+                <value name="NAME">
+                  <block type="text" id="sVX^D_aU$KC}3+DfvF/W">
+                    <field name="TEXT">tomato</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="e12P20XL/Ecz[qcJ}v|d">
+                    <field name="VAR" id="ogb9of2/wUg_4Oo2VLM)">i</field>
+                    <value name="FROM">
+                      <shadow type="math_number" id="7ro2^f?%pI0N5}oKpegs">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_number" id="_ChpsAnran(d40r=JNi|">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <shadow type="math_number" id="0U2bDB;8-*z0NzT]~n,x">
+                        <field name="NUM">10</field>
+                      </shadow>
+                      <block type="math_number" id="u%No~B[804Dv@ey4[1dD">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <shadow type="math_number" id="E%5s_Y1Ph(Db%~r(PcDC">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <statement name="DO">
+                      <block type="turtle_for_or_back_ward" id="10maM-HQ0R}~f,1hR2r:">
+                        <field name="select">forward</field>
+                        <value name="distance">
+                          <block type="variables_get" id="P={DU?VgTNe`A=vaAaXF">
+                            <field name="VAR" id="ogb9of2/wUg_4Oo2VLM)">i</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="turtle_turn_right_or_left" id="R-r[Zt[,NfXdt=.NAFE4">
+                            <field name="select">left</field>
+                            <value name="angle">
+                              <block type="math_number" id="HS$K2P_J!Q(Ad@x$Xg+|">
+                                <field name="NUM">91</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

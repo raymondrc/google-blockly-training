@@ -1,0 +1,54 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="turtle_init" id=".3PndS*1Syy:Igabe-($" x="42" y="17">
+    <next>
+      <block type="turtle_color" id="|]AJh#Q9w:/KT/Y%K+,R">
+        <value name="NAME">
+          <block type="text" id="f2q7|x)=v?L5Krm$n@iZ">
+            <field name="TEXT">tomato</field>
+          </block>
+        </value>
+        <next>
+          <block type="turtle_speed" id="uM3o,6al(@CPdAP7(:vm">
+            <value name="NAME">
+              <block type="math_number" id=".|i,bd=*_o$Y8c_I;^pt">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_repeat_ext" id="J(0.~o/OM{{dN~Ot!ml=">
+                <value name="TIMES">
+                  <shadow type="math_number" id="`4JnN-1PBo[Ydijy]wA0">
+                    <field name="NUM">10</field>
+                  </shadow>
+                  <block type="math_number" id="i4;;F_z|Ilimn%/5|kcE">
+                    <field name="NUM">50</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="turtle_for_or_back_ward" id="cV#mMs:dDkF:*n8Z!tCT">
+                    <field name="select">forward</field>
+                    <value name="distance">
+                      <block type="math_number" id="An;2hsC|Y_O}oR!QjDB;">
+                        <field name="NUM">200</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="turtle_turn_right_or_left" id="`}6*O]=QhBFlt@brWRs$">
+                        <field name="select">left</field>
+                        <value name="angle">
+                          <block type="math_number" id="wfoVGn@*wNN@VRDqMV%i">
+                            <field name="NUM">170</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

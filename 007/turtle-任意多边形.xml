@@ -1,0 +1,85 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=":EB%!h}73/JM$Tlxe/a$">side</variable>
+    <variable id="2[:d8PvZ3_6Z*WG5(QFm">length</variable>
+    <variable id="_lJzFuqwm0o0h89j[Ig{">angle</variable>
+  </variables>
+  <block type="turtle_import" id="`y%v{bSs)k_BdmGid=|n" x="61" y="39">
+    <next>
+      <block type="variables_set" id="X[*?$k9Jkn?b|=OBp4I_">
+        <field name="VAR" id=":EB%!h}73/JM$Tlxe/a$">side</field>
+        <value name="VALUE">
+          <block type="math_number" id="*rJ~WSOl6[_H)}#h~NiS">
+            <field name="NUM">7</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="1vQ.Ct6MU]ISk6E49/LV">
+            <field name="VAR" id="2[:d8PvZ3_6Z*WG5(QFm">length</field>
+            <value name="VALUE">
+              <block type="math_number" id="b}xE:)O+:n@y^wF})X/M">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="}uf_j%%ma-)*}/83,]`{">
+                <field name="VAR" id="_lJzFuqwm0o0h89j[Ig{">angle</field>
+                <value name="VALUE">
+                  <block type="math_arithmetic" id="1R?-v6@1~jN_7It*mu%5">
+                    <field name="OP">DIVIDE</field>
+                    <value name="A">
+                      <shadow type="math_number" id="=u44d=.Wm`yDW3eeQD?f">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_number" id="):BlBf`3jDtic;z`yDK,">
+                        <field name="NUM">360</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="Vd`#!/]#Q7|^f)Z!rx_D">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="g;]VR?U)1O4ut)5xkp0:">
+                        <field name="VAR" id=":EB%!h}73/JM$Tlxe/a$">side</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_repeat_ext" id="oH3dW8d:Emb7jl`O)*{Y">
+                    <value name="TIMES">
+                      <shadow type="math_number" id="?vH,DPu~K%bJj0E:`FI1">
+                        <field name="NUM">10</field>
+                      </shadow>
+                      <block type="variables_get" id=")woI3dq`$X1qPEQMs^8q">
+                        <field name="VAR" id=":EB%!h}73/JM$Tlxe/a$">side</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="turtle_forward" id="PhMX,[_xVBPbMdA$]cbp">
+                        <value name="NAME">
+                          <block type="variables_get" id="hlL$EiZ[mtiyt8qLAN2_">
+                            <field name="VAR" id="2[:d8PvZ3_6Z*WG5(QFm">length</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="turtle_right" id="Ov_ESvh83d3N.]^Ww#|}">
+                            <value name="NAME">
+                              <block type="variables_get" id="[6CZpXzP*5z`9^m^4[T}">
+                                <field name="VAR" id="_lJzFuqwm0o0h89j[Ig{">angle</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,257 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=")0#3Xf#`U._NM81WRz|R">OP</variable>
+  </variables>
+  <block type="echart_init" id="YaF8A/fs=U8ss0gIhegC" x="246" y="40">
+    <next>
+      <block type="variables_set" id="ecr1f*egU44aN|+9mr/D">
+        <field name="VAR" id=")0#3Xf#`U._NM81WRz|R">OP</field>
+        <value name="VALUE">
+          <block type="echart_options" id="wdh8/)SAZ7U,y-VRsMf(">
+            <value name="title">
+              <block type="echart_title" id=")#gG%l5]xjxmO[r;+m4;">
+                <value name="NAME">
+                  <block type="key_value_pair" id="5Ybb1dZBc$X:174k{7Lk">
+                    <value name="KEY">
+                      <block type="text" id="JxJ4g+kx8uxRC7!Ez@EJ">
+                        <field name="TEXT">title</field>
+                      </block>
+                    </value>
+                    <value name="VALUE">
+                      <block type="create_dict_with" id="WPtt[A1ai)?{XROT0_l=">
+                        <mutation items="1"></mutation>
+                        <value name="ADD0">
+                          <block type="key_value_pair" id="Z0t%o)4D6?:4Kb0PLfSn">
+                            <value name="KEY">
+                              <block type="text" id="Zf$P/EW$EO@|6lAhhWFL">
+                                <field name="TEXT">text</field>
+                              </block>
+                            </value>
+                            <value name="VALUE">
+                              <block type="text" id="0KnS{RdE-Hx=XSDrKo3{">
+                                <field name="TEXT">example</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="legend">
+              <block type="echart_legend" id="R,A9U[g|1jAA%JAqTN;(">
+                <value name="NAME">
+                  <block type="key_value_pair" id="hX(:Z_8t56h=Z(w;kZ,T">
+                    <value name="KEY">
+                      <block type="text" id="m1N1m7LF2^%.^{=mQ)EK">
+                        <field name="TEXT">legend</field>
+                      </block>
+                    </value>
+                    <value name="VALUE">
+                      <block type="create_dict_with" id=";Z~|u6cl}|g]k)6sa1j[">
+                        <mutation items="1"></mutation>
+                        <value name="ADD0">
+                          <block type="key_value_pair" id="M!;MsvZ,,;P4;X3(c,Hy">
+                            <value name="KEY">
+                              <block type="text" id="c(Rc~?l2Y@T7z5K9^M$v">
+                                <field name="TEXT">data</field>
+                              </block>
+                            </value>
+                            <value name="VALUE">
+                              <block type="lists_create_with" id=",OsV%Og4~rN2C5$)t,v3">
+                                <mutation items="1"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="r^.bJ7i;=@?LUeR_(B_5">
+                                    <field name="TEXT">销量</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="tooltip">
+              <block type="echart_tooltip" id="IIDml0PSmj)}b$8uO{7m"></block>
+            </value>
+            <value name="xaxis">
+              <block type="echart_xaxis" id="ZDAMgzE4O0A8;AV1fJkE">
+                <value name="NAME">
+                  <block type="key_value_pair" id="fdelsw`@KeY@K5[|S*G5">
+                    <value name="KEY">
+                      <block type="text" id="xbOST)~Z?vNeYx)^|9AB">
+                        <field name="TEXT">xAxis</field>
+                      </block>
+                    </value>
+                    <value name="VALUE">
+                      <block type="create_dict_with" id="JFY8ti7fL/58`U6_.b**">
+                        <mutation items="1"></mutation>
+                        <value name="ADD0">
+                          <block type="key_value_pair" id="o3PY-Z+woDD/j3leTTg!">
+                            <value name="KEY">
+                              <block type="text" id="4J7-Lp@F1.}Wep(93VvY">
+                                <field name="TEXT">data</field>
+                              </block>
+                            </value>
+                            <value name="VALUE">
+                              <block type="lists_create_with" id="IS#|i=43[($Qxn+~H8wd">
+                                <mutation items="6"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="uH8NJoLZq-fVe6F^(ol.">
+                                    <field name="TEXT">衬衫</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id="3PPmKORGvQt^)8bu((/3">
+                                    <field name="TEXT">羊毛衫</field>
+                                  </block>
+                                </value>
+                                <value name="ADD2">
+                                  <block type="text" id="D:*e9q8ldl2;_|-O^.1T">
+                                    <field name="TEXT">雪纺衫</field>
+                                  </block>
+                                </value>
+                                <value name="ADD3">
+                                  <block type="text" id="t^fediN)u]cB)8K1sR^f">
+                                    <field name="TEXT">裤子</field>
+                                  </block>
+                                </value>
+                                <value name="ADD4">
+                                  <block type="text" id="E~{k_h#p~``0Bz/+Q|Lz">
+                                    <field name="TEXT">高跟鞋</field>
+                                  </block>
+                                </value>
+                                <value name="ADD5">
+                                  <block type="text" id="*h8TwJ.d2W]*wLkYB4gp">
+                                    <field name="TEXT">袜子</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="yaxis">
+              <block type="echart_yaxis" id="`}-OO1!-BsvFk|Th19Dh"></block>
+            </value>
+            <value name="series">
+              <block type="echart_series" id="IIGcb~YnUaNza_|1At`l">
+                <value name="NAME">
+                  <block type="key_value_pair" id="LW[DzG95zeV5R@RTF8I@">
+                    <value name="KEY">
+                      <block type="text" id="Rq3$c5.j${CVJw%aeK2j">
+                        <field name="TEXT">series</field>
+                      </block>
+                    </value>
+                    <value name="VALUE">
+                      <block type="lists_create_with" id="bHf_)S1k]EIZ6UFBaz6k">
+                        <mutation items="1"></mutation>
+                        <value name="ADD0">
+                          <block type="create_dict_with" id="pz3)jhZ{2coLnKZ-h,3J">
+                            <mutation items="3"></mutation>
+                            <value name="ADD0">
+                              <block type="key_value_pair" id="a;OC{[w}`O~2hkW=U0$1">
+                                <value name="KEY">
+                                  <block type="text" id="S.)pGB)a,G_:RyhN;tiF">
+                                    <field name="TEXT">name</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE">
+                                  <block type="text" id="~*yY~[;6r4c8Pr3[5V}V">
+                                    <field name="TEXT">销量</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="key_value_pair" id="gq;j1N%K.qQD3xgg*,C0">
+                                <value name="KEY">
+                                  <block type="text" id="Cq-CNc8;EPQ|1F_P#?wt">
+                                    <field name="TEXT">type</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE">
+                                  <block type="text" id="8!n^T=7A)(EIqOjCV_F8">
+                                    <field name="TEXT">bar</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block type="key_value_pair" id="R/#[p#eMP^_4H_lNsX[M">
+                                <value name="KEY">
+                                  <block type="text" id="WWbeO=3Xt1#xyVeypIRp">
+                                    <field name="TEXT">data</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE">
+                                  <block type="lists_create_with" id="N/|uYtQ:}xDD.{0`1*;c">
+                                    <mutation items="6"></mutation>
+                                    <value name="ADD0">
+                                      <block type="math_number" id="?wzD8xVbh^YHh66G/{!%">
+                                        <field name="NUM">5</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="math_number" id="Km3j9tqj+d9fb:l.~5m]">
+                                        <field name="NUM">20</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD2">
+                                      <block type="math_number" id="D.T[,gaOJM(yIvmRqW%*">
+                                        <field name="NUM">36</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD3">
+                                      <block type="math_number" id="`kN5~[nOhm8F89rk]Ra9">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD4">
+                                      <block type="math_number" id=";9Ij/NEm]4ef5Q.yum,W">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD5">
+                                      <block type="math_number" id="RTsKO.]#Q1=M_;i,V,2I">
+                                        <field name="NUM">20</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="echart_setoptions" id="6asb.MX2Rn0`vGudt@;5">
+            <value name="NAME">
+              <block type="variables_get" id="o7Fqx5b7;o,FTPJnD3|=">
+                <field name="VAR" id=")0#3Xf#`U._NM81WRz|R">OP</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
