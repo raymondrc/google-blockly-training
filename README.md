@@ -14,3 +14,10 @@
 ### 字典数据结构
 ### 保存与加载
 ### 开发实例：echart集成
+
+
+## Python-Turtle集成到Blockly中
+<img src="images/python-turtle-demo.png" width= 80%>
+
+## Echart集成到Blockly中
+<img src="images/echart-demo.png" width= 80%>
